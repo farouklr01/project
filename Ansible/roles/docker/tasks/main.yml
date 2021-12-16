@@ -1,7 +1,7 @@
 ---
 - name: create docker image
   docker_image:
-    name: jelassioussema/devops
+    name: farouklr01/cilab
     build:
       path: /var/lib/jenkins/workspace/ffffff
       pull: no 
