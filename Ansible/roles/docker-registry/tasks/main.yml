@@ -1,0 +1,14 @@
+---
+# tasks file for docker-registry
+- name: Log into DockerHub
+  docker_login:
+    username: farouklr01
+    password: tombrider54634999
+    email: mohamedfarouk.laroussi@esprit.tn
+
+
+- name: Push to docker hub
+  docker_image:
+    name: "farouklr01/cilab"
+    repository: farouklr01/cilab
+    push: yes
