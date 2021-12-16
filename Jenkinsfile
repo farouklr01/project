@@ -13,21 +13,21 @@ pipeline {
        stage('Build') {
            steps {
                script {
-               sh "sudo ansible-playbook ansible/build.yml -i ansible/inventory/host.yml "    
+               sh "sudo ansible-playbook Ansible/build.yml -i Ansible/inventory/host.yml "    
               	       }
            }
        }
        stage('Docker') {
            steps {
                script {
-               sh "sudo ansible-playbook ansible/docker.yml -i ansible/inventory/host.yml "    
+               sh "sudo ansible-playbook Ansible/docker.yml -i Ansible/inventory/host.yml "    
               	       }
            }
        }
        stage('Push local image to repositroy') {
            steps {
                script {
-               sh "sudo ansible-playbook ansible/docker.yml -i ansible/inventory/host.yml "    
+               sh "sudo ansible-playbook Ansible/docker.yml -i Ansible/inventory/host.yml "    
               	       }
            }
        }
