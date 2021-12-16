@@ -3,7 +3,7 @@
   docker_image:
     name: jelassioussema/devops
     build:
-      path: /var/lib/jenkins/workspace/MyappPipline
+      path: /var/lib/jenkins/workspace/ffffff
       pull: no 
     source: build
     state: present
@@ -11,7 +11,7 @@
 -  name: run container docker
    docker_container:
      name: myapp_container
-     image: jelassioussema/devops:latest
+     image: farouklr01/cilab:latest
      state: started
      recreate: true
      ports:
