@@ -5,6 +5,8 @@
   "projects": {
     "Myapp": {
       "projectType": "application",
+"options": {
+         "outputPath": "dist/my-app-name",
       "schematics": {
         "@schematics/angular:application": {
           "strict": true
