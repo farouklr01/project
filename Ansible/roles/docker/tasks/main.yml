@@ -10,7 +10,7 @@
     force_source: true
 -  name: run container docker
    docker_container:
-     name: myapp_container
+     name: Myapp_container
      image: farouklr01/cilab:latest
      state: started
      recreate: true
